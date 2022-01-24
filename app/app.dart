@@ -1,5 +1,10 @@
+import 'dart:io';
 
 main() {
-    var img = { 'link': 'http' };
-    print('Hello: ' + img['link'].toString());
+    int? age = int.parse(stdin.readLineSync()!);    
+    if(age >= 18){
+        print('Majeur');
+    }else{
+        print('Mineur');
+    }
 }
