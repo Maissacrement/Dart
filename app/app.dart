@@ -1,7 +1,7 @@
 import 'dart:io';
 
 main() {
-    var age = stdin.readLineSync();
+    int age = stdin.readLineSync();
     if(age >= 18){
         print('Majeur');
     }else{
