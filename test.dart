@@ -1,11 +1,13 @@
+import 'dart:io';
 main() {
-print(age(20));
+print("Saisissez votre âge svp");
+
+int? age = int.parse(stdin.readLineSync()!);
+print('Vous avez $age ans');
+if (age >= 18){
+    print('Vous êtes majeur');
+}else{
+    print('Vous êtes mineur');
+}
 }
 
-bool age(x){
-  if(x>=18){
-    return true;
-  }
-  else{
-    return false;}
-}
