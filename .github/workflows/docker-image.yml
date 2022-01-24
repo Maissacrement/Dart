@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        make build && docker run -i --rm dart /bin/bash dart /app/app/app.dart
+        make build && docker run -i --rm dart /bin/bash /opt/flutter/bin/dart /app/app/app.dart
